@@ -1,0 +1,34 @@
+{
+  "name": "plunk-agent-cli",
+  "version": "0.1.0",
+  "description": "A safe, dependency-free REST CLI for agents operating Plunk",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "plunk-agent-cli": "bin/plunk-agent-cli"
+  },
+  "files": [
+    ".agents/skills",
+    "bin",
+    "dist",
+    "docs",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MDerman/plunk-agent-cli.git"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "pnpm build && node --test test/*.test.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2"
+  }
+}
