@@ -42,10 +42,6 @@ Calls that can deliver email or trigger a workflow require `--allow-delivery`. D
 
 HTTP is rejected by default because it exposes bearer credentials in transit. Use `--allow-insecure` only for a trusted loopback or private-network endpoint.
 
-## Agent skill
-
-The repository owns the `plunk-agent-cli-email-marketing` skill at [`.agents/skills/plunk-agent-cli-email-marketing/`](.agents/skills/plunk-agent-cli-email-marketing/). A skill registry can link that directory into a global agent catalog while keeping this checkout as the canonical source.
-
 ## Development
 
 ```bash
