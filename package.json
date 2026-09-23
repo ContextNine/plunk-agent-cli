@@ -25,10 +25,12 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "check": "pnpm build && node --test test/*.test.mjs",
+    "release:build": "node scripts/build-release.mjs",
     "test": "node --test test/*.test.mjs"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
     "typescript": "^5.9.2"
-  }
+  },
+  "packageManager": "pnpm@10.15.0"
 }
